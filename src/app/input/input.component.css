@@ -1,0 +1,11 @@
+.form {
+  height: 55px;
+  width: 600px;
+  background-color: white;
+  border-radius: 90px;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+<body>
+    <div class=header_cont>
+        <h1 class=title>Find your match !</h1>
+        <div class=icons>
+            <a href=#>Icon Accueil</a>
+            <a href=list>Test2</a>
+        </div>
+    </div>
+
+
+    <ng-container *ngFor="let movie of listMovies | slice:0:1;" class="cards">
+        <div class="cards-container">
+
+            <div class="movie_rating">
+                <p class="movie_count">{{movie.vote_count}} people voted</p>
+                <p class="movie_note">{{movie.vote_average}}/10</p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-top" style="
+                    background-image: url(https://image.tmdb.org/t/p/w500/{{movie.poster_path}});
+                    ">
+                    <p class="movie_title">{{movie.title | titlecase}}</p>
+                    <div class="buttons">
+
+                        <button mat-fab class="love" (click)="this.getMovie(movie)">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                        <button mat-fab class="hate">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie_description">
+                <p>{{movie.overview}}</p>
+                <div class="release_date">
+                    <p>Released in:</p>
+                    <p>{{movie.release_date | date:'d/mM/y' }}</p>
+                </div>
+            </div>
+        </div>
+
+    </ng-container>
+</body>

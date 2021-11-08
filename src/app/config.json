@@ -1,0 +1,5 @@
+{
+    "moviesUrl": "`https://api.themoviedb.org/3/movie/550?api_key=${apiKey}`",
+    "textfile": "assets/textfile.txt",
+    "date": "2020-01-29"
+}

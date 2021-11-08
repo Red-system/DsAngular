@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
+/* font-family: 'Montserrat', sans-serif ; */
+body{
+  background-color: red;  
+}
+
+.header_cont{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(177, 27, 27);
+  margin: 0px 50px;
+  align-items: center;
+}
+
+.icons{
+  display: flex;
+}
+
+.icons a{
+  padding: 0px 50px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif ;
+  font-weight: bold;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 0 5px;
+  margin:20px
+}
+.cards-container{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  background-color: aliceblue;
+  padding: 30px;
+  margin: 20px 50px;
+  border-radius: 20px;
+}
+
+.movie_rating{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+.movie_count{
+  font-size: 30px;
+  padding: 40px 0px;
+}
+.movie_note{
+  font-size: 40px;
+}
+.card{
+  border-radius: 15px;
+  height: 520px;
+  width: 30%;
+  margin: 0px 20px; 
+}
+
+
+.movie_description{
+  width: 33%;
+  font-size: 20px;
+ 
+}
+
+.movie_title{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif ;
+  color: white;
+  font-weight: bold;
+  padding: 25px 5px;
+  text-shadow: black 1px 0 5px;
+}
+.card-top{
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+                    
+}
+.release_date{
+  padding: 50px;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+.buttons{
+    padding: 10px;
+}
+
+.love{
+    background-color: rgb(236, 102, 124);
+    margin: 0px 40px
+}
+
+.hate{
+    background-color: red;
+    margin: 0px 40px
+}
